@@ -33,11 +33,125 @@ footer {
     font-size: .8em;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
+ul.posts {
+    margin: 20px auto 40px;
     font-size: 1.5em;
 }
 
 ul.posts li {
     list-style: none;
+}
+
+.masterlayout {
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: 20px 300px auto 20px 50px;
+    grid-template-areas:
+        "b b"
+        "h h"
+        "n c"
+        "d d"
+        "f f";
+}
+
+.header {
+    grid-area: h;
+}
+
+.navigation {
+    grid-area: n;
+}
+
+.navigation {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 5px;
+}
+
+.content {
+    grid-area: c;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 5px;
+}
+
+.home_content {
+    grid-area: c;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 200px 200px;
+    grid-template-areas:
+    "hs about"
+    "int int"
+    "ps ps"
+}
+
+.headshot {
+    grid-area: hs;
+}
+
+.about {
+    grid-area: about;
+}
+
+.project_summary {
+    grid-area: ps;
+}
+
+.interests {
+    grid-area: int;
+}
+
+.footer {
+    grid-area: f;
+}
+
+/* for books */
+.books {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-flow: dense;
+}
+
+.nested {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: repeat(3, 100px);
+}
+
+.books > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
+}
+
+.nested > div {
+    align-items: center;
+    font-size: 0.2em;
+    color: #000;
+}
+
+.books > div > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nested > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+html, body {
+    background-image: url("img/background.png");
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #000;
+    background-size: cover;
+    margin: 10px;
 }
