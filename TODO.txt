@@ -1,0 +1,6 @@
+https://scrimba.com/g/gR8PTE
+
+[ ] Create books page like on six using css grid (https://scrimba.com/p/pWqLHa/cvNJyHd)
+[ ] Make layout reactive
+[ ] Make "about you" page
+[ ] fill content
