@@ -12,9 +12,9 @@ title                    : "Luca Gaegauf"
 title_separator          : "-"
 name                     : &name "Luca Gaegauf"
 description              : &description "Ph.D. candidate in Finance at the University of Zurich"
-url                      : https://lgaegauf.github.io 
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "lpupp/lgaegauf.github.io"
+url                      : https://lpupp.github.io 
+baseurl                  : ""
+repository               : "lpupp/lpupp.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -23,7 +23,7 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Luca Gaegauf"
-  pronouns         : # example: "he/him"  
+  pronouns         :
   bio              : "Short biography for the left-hand sidebar"
   location         : "Zurich, Switzerand"
   employer         : "University of Zurich"
