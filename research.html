@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luca Gaegauf | Research</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>Luca <strong>Gaegauf</strong> | <span class="job-title">PhD Candidate in Finance at University of Zurich</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="research-section">
+                <h2>Published Research and Working Papers</h2>
+                <div class="research-item">
+                    <div class="image-container">
+                        <img src="assets/images/deqn.png" alt="Deep equilibrium nets paper image" class="paper-img">
+                    </div>
+                    <div class="research-details">
+                        <h3>Deep Equilibrium Nets</h3>
+                        <p>Marlon Azinovic, Luca Gaegauf, and Simon Scheidegger</p>
+                        <p><strong>Abstract:</strong> We introduce deep equilibrium nets (DEQNs)&mdash;a deep learning-based method to compute approximate functional rational expectations equilibria of economic models 
+                            featuring a significant amount of heterogeneity, uncertainty, and occasionally binding constraints. DEQNs are neural networks trained in an unsupervised 
+                            fashion to satisfy all equilibrium conditions along simulated paths of the economy. Since DEQNs approximate the equilibrium functions directly, simulating 
+                            the economy is computationally cheap, and training data can be generated at virtually zero cost. We demonstrate that DEQNs can accurately solve economically 
+                            relevant models by applying them to two challenging life-cycle models and a Bewley-style model with aggregate risk. </p>
+                        <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/iere.12575" target="_blank">See paper</a>
+                        <a href="assets/papers" download="deep equilibrium nets.pdf">Download PDF</a>
+                    </div>
+                </div>
+                <div class="research-item">
+                    <div class="image-container">
+                        <img src="assets/images/dpo.png" alt="Dynamic portfolio choice with transaction costs paper image" class="paper-img">
+                    </div>
+                    <div class="research-details">
+                        <h3>A Comprehensive Machine Learning Framework for Dynamic Portfolio Choice With Transaction Costs</h3>
+                        <p>Luca Gaegauf, Simon Scheidegger, and Fabio Trojani </p>
+                        <p><strong>Abstract:</strong> We introduce a comprehensive computational framework for solving dynamic portfolio choice problems with many risky assets, transaction costs, and borrowing 
+                            and short-selling constraints. Our approach leverages the synergy between Gaussian process regression and Bayesian active learning to efficiently approximate 
+                            value and policy functions with a novel, formal way of characterizing the irregularly-shaped no-trade region; we then embed this into a discrete-time dynamic 
+                            programming algorithm. This combination allows us to study dynamic portfolio choice problems with more risky assets than was previously possible. Our results 
+                            indicate that giving the agent access to more assets may alleviate some illiquidity resulting from the presence of transaction costs. </p>
+                        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4543794" target="_blank">See paper</a>
+                        <a href="assets/papers" download="dynamic portfolio choice with transaction costs.pdf">Download PDF</a>
+                    </div>
+                </div>
+                <!-- Repeat the above div for each research item -->
+            <!-- 
+            </section>
+            <section class="research-section">
+            -->
+                <h2 style="margin-top: 50px;">Ongoing Research</h2>
+                <div class="research-item">
+                    <div class="image-container">
+                        <img src="assets/images/ecap.png" alt="Empirical causal asset pricing paper image" class="paper-img">
+                    </div>
+                    <div class="research-details">
+                        <h3>Empirical Causal Asset Pricing with Trading Costs</h3>
+                        <p>Luca Gaegauf and Vincent Wolff</p>
+                        <p><strong>Abstract:</strong> Do stock prices of publicly listed companies respond to changes in trading costs?
+                            We document a significant and asymmetric effect of tick-size changes on prices by
+                            leveraging a novel policy framework that allows for a causal randomized control trial
+                            difference-in-differences analysis. The doubling of the tick size leads to a decrease in
+                            prices by 0.9% to 1.3%, whereas halving the tick size results in an increase of 3.3%
+                            to 3.5%. The price effect is more pronounced in smaller firms and tick-unconstrained
+                            stocks. We report substantial excess returns on the day before the tick-size change
+                            attributable to quote and price clustering and, with caution, to strategic short-term
+                            price manipulation. </p>
+                            <a href="research.html" target="_blank">PhD thesis link coming soon</a>
+                    </div>
+                </div>
+                <div class="research-item">
+                    <div class="image-container">
+                        <img src="assets/images/pp.png" alt="Perfect pairings paper image" class="paper-img">
+                    </div>
+                    <div class="research-details">
+                        <h3>Which Shoes Fit This Dress? Using Product Images to Infer “Perfect Pairings” Across Categories Without Supervision</h3>
+                        <p>Luca Gaegauf and Markus Meierer</p>
+                        <p><strong>Abstract:</strong> Product recommendations are omnipresent and contribute significantly to the revenue of online retail businesses. Nevertheless, customers often complain 
+                            about the quality of recommendations. A possible explanation is that the requirements of existing approaches are not always met. The increasing speed 
+                            of product assortment changes challenges collaborative filter techniques, which are subject to the cold start problem. Alternative approaches such as 
+                            preference- or content-based recommendations systems require detailed structured information (e.g., on product characteristics or previous customer 
+                            purchase patterns), which is often not available. Addressing this challenge, the authors propose an unsupervised approach to infer recommendations across 
+                            domains solely based on product images. With the increasing interest in deep learning techniques, convolutional neural networks have been used to infer 
+                            single-domain recommendations based on the intrinsic information of product images (e.g., recommend alternative dresses based on the image of a dress). 
+                            Albeit promising, approaches to infer cross-domain recommendations are largely unexplored. Using generative adversarial networks and convolutional neural 
+                            networks to leverage the implicit information in product images, the authors propose an unsupervised approach to make recommendations across product 
+                            categories (e.g., recommend shoes based on an image of a dress). The performance of the approach is assessed by benchmarking to various empirical baselines 
+                            as well as surveying potential customers on the perceived quality of the recommendations. Further, the authors discuss two extensions: (1) Making 
+                            recommendations for multiple other domains based on a single product image as input and (2) making cross-domain recommendations based on multiple product 
+                            images as input. Concluding, theoretical and managerial implications are discussed. </p>
+                            <a href="research.html" target="_blank">PhD thesis link coming soon</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>© 2024 Luca Gaegauf. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
+
