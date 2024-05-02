@@ -9,139 +9,128 @@ body, html {
 }
 
 .container {
-display: flex;
-flex-direction: column;
-min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-background-color: #2a2a2a;
-color: white;
-padding: 20px;
-display: flex;
-justify-content: space-between;
-align-items: center;
+    background-color: #2a2a2a;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
-list-style-type: none;
-display: flex;
+    list-style-type: none;
+    display: flex;
 }
 
 nav ul li {
-margin-left: 20px;
+    margin-left: 20px;
 }
 
 nav ul li a {
-color: white;
-text-decoration: none;
-font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .logo h1 {
-margin: 0;
-font-weight: 300; /* Thinner weight for the overall font */
-font-size: 24px;
+    margin: 0;
+    font-weight: 300; /* Thinner weight for the overall font */
+    font-size: 24px;
 }
 
 .logo h1 strong {
-font-weight: bold; /* Bolder weight for the last name */
+    font-weight: bold; /* Bolder weight for the last name */
 }
 
-.job-title {
-font-weight: 300;
-font-size: 18px; /* Smaller and thinner font for job title /
-margin-left: 10px; / Small gap between name and job title */
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
 }
 
-.main {
-flex-grow: 1;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 20px;
-}
-
-.introduction {
-display: flex;
-align-items: center;
-justify-content: center;
-margin-top: 20px;
-background-color: white;
-padding: 20px;
-border-radius: 8px;
-box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+.personal-info {
+    width: 300px; /* Adjust width as needed */
+    margin-right: 40px; /* Space between the two columns */
 }
 
 .profile-img {
-width: 150px;
-height: 150px;
-border-radius: 75px;
-margin-right: 20px;
+    width: 100%; /* Full width of the personal-info section */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 150px; /* Circular image */
 }
 
-.introduction div h2 {
-margin: 0 0 10px 0;
-color: #333;
-font-weight: 300; /* Consistent thin font styling */
+.personal-info h2, .personal-info p, .contact-info {
+    margin: 10px 0; /* Vertical spacing */
 }
 
-.introduction div h2 strong {
-font-weight: bold; /* Emphasis on the last name */
+.icon {
+    height: 25px; /* Fixed size for icons */
+    width: auto;
+    vertical-align: middle; /* Align icon with text */
+    margin-right: 5px; /* Space between icon and text */
 }
 
-.introduction div p {
-margin: 0;
-font-size: 18px;
-color: #555;
+.contact-info a {
+    margin-right: 0; /* No right margin for links */
+    display: inline; /* Inline display for alignment */
 }
 
-.social-links {
-text-align: center;
-margin-top: 20px;
+.social-link {
+    display: flex;
+    /*justify-content: center; */
+    align-items: center;
+    width: 100%; /* Takes full width to allow centering */
+    margin: 10px 0;
 }
 
-.social-links a {
-margin-right: 15px;
-text-decoration: none;
-color: #2a2a2a;
-font-size: 16px;
-border: 2px solid #2a2a2a;
-padding: 10px 15px;
-border-radius: 5px;
-transition: background-color 0.3s, color 0.3s;
+.social-link a {
+    display: inline-flex; /* Use inline-flex to align the icon nicely */
+    align-items: center; /* Center align the icon vertically within the link */
+    margin: 0 5px; /* Spacing between icons */
 }
 
-.social-links a:hover {
-background-color: #2a2a2a;
-color: white;
+.social-link img {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.about-me {
+    flex-grow: 1; /* Take remaining space */
+    max-width: 600px; /* Max width to control line length */
+}
+
+.about-me p {
+    text-align: justify; /* Justified text for a cleaner look */
 }
 
 footer {
-background-color: #333;
-color: white;
-text-align: center;
-padding: 10px 0;
-margin-top: auto;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
 }
 
 footer p {
-margin: 0;
+    margin: 0;
 }
 
 @media (max-width: 768px) {
-.introduction {
-flex-direction: column;
-text-align: center;
-}
+    .introduction {
+    flex-direction: column;
+    text-align: center;
+    }
 
-.profile-img {
-    margin-bottom: 20px;
+    .profile-img {
+        margin-bottom: 20px;
+    }
 }
-
-}
-
 
 .research-section {
     padding: 20px;
@@ -154,8 +143,8 @@ text-align: center;
     align-items: center; /* Centers the content horizontally in the flex container */
 }
 
-
 .research-item {
+    background-color: #f4f4f4;
     display: flex;
     align-items: flex-start; /* Adjusts vertical alignment */
     justify-content: center; /* Centers content horizontally */
@@ -200,22 +189,6 @@ text-align: center;
     max-width: 95%;
     text-align: justify; /* Justifies text */
     text-justify: inter-word; /* Improves spacing between words */
-}
-
-.research-details a {
-    color: #2a2a2a;
-    text-decoration: none;
-    font-size: 16px;
-    border: 1px solid #2a2a2a;
-    padding: 5px 10px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-right: 10px; /* Adds a small space between the two links */
-}
-
-.research-details a:hover {
-    background-color: #2a2a2a;
-    color: white;
 }
 
 .course-section {
@@ -267,7 +240,16 @@ text-align: center;
     transform: scale(1.05); /* Slight zoom on hover */
 }
 
-.course a {
+.coauthor-hlink {
+    color: blue;
+    text-decoration: underline; 
+}
+
+.coauthor-hlink:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+.button {
     color: #2a2a2a;
     text-decoration: none;
     font-size: 16px;
@@ -278,7 +260,7 @@ text-align: center;
     margin-right: 10px; /* Adds a small space between the two links */
 }
 
-.course a:hover {
+.button:hover {
     background-color: #2a2a2a;
     color: white;
 }
