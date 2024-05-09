@@ -48,6 +48,17 @@ nav ul li a {
     font-weight: bold; /* Bolder weight for the last name */
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;  /* Adjust size as needed */
+    width: auto;  /* Maintain aspect ratio */
+    margin-right: 10px;  /* Space between the icon and the name */
+}
+
 .content-wrapper {
     display: flex;
     align-items: flex-start;
@@ -80,6 +91,7 @@ nav ul li a {
 .contact-info a {
     margin-right: 0; /* No right margin for links */
     display: inline; /* Inline display for alignment */
+    padding: 5px;
 }
 
 .social-link {
@@ -100,6 +112,11 @@ nav ul li a {
     margin-right: 10px; /* Space between icon and text */
 }
 
+.content-wrapper_single {
+    justify-content: center;
+    padding: 20px;
+}
+
 .about-me {
     flex-grow: 1; /* Take remaining space */
     max-width: 600px; /* Max width to control line length */
@@ -107,6 +124,19 @@ nav ul li a {
 
 .about-me p {
     text-align: justify; /* Justified text for a cleaner look */
+}
+
+.what-im-reading {
+    width: 900px; /* Adjust width as needed */
+    margin-right: 40px; /* Space between the two columns */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+}
+
+.what-im-reading p {
+    text-align: justify
 }
 
 footer {
@@ -206,10 +236,11 @@ footer p {
     margin: 20px;
     max-width: 1200px;
     margin-top: 20px;
-    padding: 10px;
+    padding: 25px;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #f4f4f4;
 }
 
 .course h3 {
@@ -218,9 +249,14 @@ footer p {
 }
 
 .course p {
+    padding-left: 20px;
+    padding-right: 30px;
+    /* max-width: 95%; */
     font-size: 16px;
     color: #666;
     margin-bottom: 20px;
+    text-align: justify; /* Justifies text */
+    text-justify: inter-word; /* Improves spacing between words */
 }
 
 .slides-gallery {
@@ -246,6 +282,14 @@ footer p {
 }
 
 .coauthor-hlink:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+.paper-hlink {
+    color: #2a2a2a;
+}
+
+.paper-hlink:hover {
     text-decoration: underline; /* Adds underline on hover */
 }
 
