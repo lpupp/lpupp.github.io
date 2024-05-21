@@ -112,13 +112,6 @@ nav ul li a {
     margin-right: 10px; /* Space between icon and text */
 }
 
-.content-wrapper_single {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 20px;
-}
-
 .about-me {
     flex-grow: 1; /* Take remaining space */
     max-width: 600px; /* Max width to control line length */
