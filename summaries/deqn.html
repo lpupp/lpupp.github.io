@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Equilibrium Nets | Blog Post</title>
+    <link rel="stylesheet" href="../styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo"> 
+                Luca <strong>Gaegauf</strong>
+            </div>
+            <nav>
+                <a href="../index.html" class="header-button">Home</a>
+                <a href="../research.html" class="header-button">Research</a>
+                <a href="../teaching.html" class="header-button">Teaching</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="blog-section">
+                <!-- Blog Post Card -->
+                <div class="research-item blog-post">
+                    <div class="research-details">
+                        <h1>Deep Equilibrium Nets</h1>
+                        <h2 style="margin-top: -30px;">A Short Overview</h2>
+                        <!-- <p class="post-meta">Published on October 10, 2024</p>
+                        <p><strong>TL;DR:</strong> TODO</p>
+                        <hr style="color: #bebebe; margin-bottom: 20px;"> -->
+
+                        <p>Deep Equilibrium Nets (DEQNs) are a modern innovation in deep learning designed to solve complex economic models. These models often feature multiple types of agents, economic constraints, and uncertainty, making them difficult to compute using traditional methods. DEQNs aim to approximate the equilibrium of these models using neural networks, bypassing the need for extensive manual calculations.</p>
+                        
+                        <p>The key strength of DEQNs lies in their ability to compute what economists call "equilibrium." Simply put, DEQNs help determine how an economy evolves and stabilizes over time as agents make decisions based on their expectations of the future. These decisions, such as spending, saving, and investing, interact with one another, and DEQNs make this process more efficient and scalable.</p>
+
+                        <h3>Why Traditional Methods Struggle with Complexity</h3>
+                        
+                        <p>Economic models that attempt to account for things like household behavior, financial frictions, and uncertainty are notoriously difficult to solve. This is because these models often have what is known as "high-dimensional state spaces." Essentially, there are too many variables at play&mdash;different factors interacting with each other in unpredictable ways.</p>
+                        
+                        <p>Traditional methods, like grid-based approaches, work by dividing this complex space into smaller parts. However, these methods quickly become computationally expensive as the number of variables increases. This is known as the "curse of dimensionality." Additionally, these older methods struggle when the economic model involves constraints, non-linearities, or irregular patterns. This is where DEQNs come into play, offering a more flexible and efficient solution.</p>
+
+                        <h3>Enter DEQNs &mdash; The New Way Forward</h3>
+
+                        <p>Deep Equilibrium Nets (DEQNs) represent a significant shift in how economists can solve high-dimensional models. Instead of relying on traditional, computationally heavy methods, DEQNs use deep learning techniques to approximate equilibrium solutions directly. The power of DEQNs lies in their ability to handle complex, non-linear models efficiently and quickly.</p>
+
+                        <p>DEQNs use unsupervised learning, meaning they do not require labeled data to train the neural network. This method allows the system to learn and adjust based on simulated paths of the economy. As a result, DEQNs can achieve accurate results without the extensive computational resources older methods typically need.</p>
+
+                        <h3>The Core Idea Behind DEQNs</h3>
+                        <p>At the heart of DEQNs is the concept of simulating the economy rather than solving each equation manually. Instead of calculating specific values for every decision point (such as consumption or investment), DEQNs use neural networks to generate economic simulations. These simulations are then assessed based on how well they meet the model's conditions. If the simulation doesn't reflect the expected equilibrium, the neural network adjusts to improve its approximation.</p>
+
+                        <h3>Applications of DEQNs in Economics</h3>
+
+                        <p>DEQNs have proven particularly effective in addressing complex economic problems, especially in life-cycle models or situations where agents face multiple sources of uncertainty. For instance, DEQNs can model how individuals manage their savings and spending over a lifetime, factoring in events like job transitions, health issues, or financial crises. Tracking many agents of different ages over time makes these problems highly complex and difficult for traditional methods to handle.</p>
+
+                        <h3>Why DEQNs Are Computationally Efficient</h3>
+
+                        <p>DEQNs are highly efficient because they bypass many of the computational challenges that traditional methods face. By simulating economic paths rather than solving for every variable, DEQNs drastically reduce the computational load. Generating simulations is much less resource-intensive than solving the underlying equations, and once the neural network is trained, it can simulate future economic states with virtually no additional cost.</p>
+
+                        <p>The unsupervised nature of the learning process also means that DEQNs can generate their own training data through these simulations, reducing reliance on pre-existing data sets and minimizing overhead. This grid-free approach makes DEQNs a faster, more flexible option for solving complex economic models.</p>
+                        
+                        <p>This simulation-driven approach allows DEQNs to learn where the most important areas of the economy are and focus on those. As a result, the model becomes more accurate without wasting time on less relevant areas of the state space. By training on simulated data, DEQNs also reduce the need for large, computationally expensive datasets typically required by other approaches.</p>
+                        
+                        <h3>Real-World Examples of DEQNs</h3>
+                        <p>Deep Equilibrium Nets (DEQNs) have demonstrated significant potential in tackling complex economic challenges across various models. A key application is in life-cycle models, where DEQNs are used to track the economic decisions of individuals over their lifetime. These models account for changes in savings, income shocks, and spending behaviors, which can be particularly difficult to solve due to their multi-dimensional nature. DEQNs make this computation far more efficient, offering accurate simulations even as the number of variables increases.</p>
+
+                        <p>Another powerful application of DEQNs is in asset pricing models, especially those dealing with rare economic disasters 
+                            (see <a href="https://drive.google.com/file/d/1Kff3ZPLpCMq4W7p5uGi0NmhepXZ8wRpp/view">this paper</a>). For example, 
+                            in an overlapping generations model, DEQNs have been used to examine the intergenerational consequences of rare disasters 
+                            like economic recessions or financial crises. Young households, for instance, are often more vulnerable in recessions as they are more dependent on their labor income rather than savings. 
+                            Older households, who have accumulated larger savings, are more affected by sharp declines in asset prices. 
+                            DEQNs help model these complex interactions, offering insights into how different generations experience economic shocks.</p>
+
+                        <p>DEQNs have also been applied to climate models (see <a href="https://www.aeaweb.org/conference/2024/program/paper/32yGkdAi">this paper</a>), where they are used to understand the economic impacts of climate change under uncertainty. By simulating different scenarios with varying levels of climate sensitivity and economic damage, DEQNs provide valuable tool for researchers exploring policies related to climate change and long-term economic planning.</p>
+
+                        <h3>Key Benefits of DEQNs</h3>
+                        <p>DEQNs bring several major benefits to the table, including:</p>
+                        <ul>
+                            <li><strong>Efficiency:</strong> DEQNs reduce the time and computational resources needed to solve high-dimensional economic models.</li>
+                            <li><strong>Flexibility:</strong> The neural network-based approach allows for modeling of irregular, non-linear, and high-dimensional economic settings.</li>
+                            <li><strong>Scalability:</strong> DEQNs can be scaled to handle models with many variables, making them useful for a wide range of applications in economics.</li>
+                        </ul>
+                        
+                        <h3>Challenges and Limitations of DEQNs</h3>
+                        <p>While DEQNs offer many advantages, there are still some challenges. One of the main limitations is that the neural network may require significant fine-tuning to achieve optimal performance. This can involve manually adjusting hyperparameters or dealing with potential overfitting until the model is properly tuned.</p>
+                        
+                        <p>However, because DEQNs are relatively new, there is ongoing research into how they can be improved to handle even larger models or new types of constraints.
+                        For example, <a href="https://drive.google.com/file/d/1Kff3ZPLpCMq4W7p5uGi0NmhepXZ8wRpp/view">recent advancements</a> have made significant 
+                            strides in ensuring that key conditions are always satisfied or that training is stabilized by iterating between solving different parts of the economy. 
+                            This reduces the likelihood of errors in the computed equilibrium and makes it easier to generate consistent solutions .</p>
+
+                        <h3>Conclusion</h3>
+                        <p>DEQNs represent a novel approach to solving complex economic models. By leveraging the power of deep learning and simulation, DEQNs overcome many of the limitations of traditional methods. Their ability to handle high-dimensional spaces, irregular patterns, and non-linearities makes them a versatile and efficient tool for economists.</p>
+                        
+                        <p>Because DEQNs can handle high-dimensional spaces with many variables, they are well-positioned to improve models that include diverse agents, financial frictions, and irregular shocks. This could lead to better insights into economic phenomena such as inequality, climate change, and policy impacts.</p>
+
+                        <h3>How To Start Using DEQNs</h3>
+                        <p>For economists interested in adopting DEQNs in their research or models, there are plenty of resources available:</p>
+                        <ul>
+                            <li>For more technical details, please refer to the <a href="assets/papers/deep-equilibrium-nets.pdf" target="_blank">full research paper</a>.</li>
+                            <li>DEQN code examples can be found on our <a href="https://github.com/sischei/DeepEquilibriumNets" target="_blank">GitHub</a>.</li>
+                            <li>A simple but thorough application of DEQN can be found in <a href="https://nbviewer.org/github/sischei/DeepEquilibriumNets/blob/master/code/jupyter-notebooks/analytic/Analytic_tf1.ipynb" target="_blank">this notebook</a>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="social-icons">
+                <a class="icon-tooltip">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="tooltip">Zug, Switzerland</div>
+                </a>
+                <a href="https://linkedin.com/in/lgaegauf"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/lpupp"><i class="fab fa-github"></i></a>
+                <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3545351"><i class="fas fa-book"></i></a>
+                <a href="mailto:luca.gaegauf@unige.ch"><i class="far fa-envelope"></i></a>
+            </div>
+            <p class="footer-text">Handcrafted by me and ChatGPT</p>
+            <p class="footer-made-with">Made with ❤️</p>
+        </footer>
+    </div>
+</body>
+</html>

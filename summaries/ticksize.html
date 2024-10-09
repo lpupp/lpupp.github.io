@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Equilibrium Nets | Blog Post</title>
+    <link rel="stylesheet" href="../styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo"> 
+                Luca <strong>Gaegauf</strong>
+            </div>
+            <nav>
+                <a href="../index.html" class="header-button">Home</a>
+                <a href="../research.html" class="header-button">Research</a>
+                <a href="../teaching.html" class="header-button">Teaching</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="blog-section">
+                <!-- Blog Post Card -->
+                <div class="research-item blog-post">
+                    <div class="research-details">
+                        <h1>Empirical Causal Asset Pricing with Trading Costs</h1>
+                        <h2 style="margin-top: -30px;">A Short Overview</h2>
+                        <!-- <p class="post-meta">Published on October 10, 2024</p>
+                        <p><strong>TL;DR:</strong> TODO</p>
+                        <hr style="color: #bebebe; margin-bottom: 20px;"> -->
+                        <p>Asset pricing is a fundamental concept in financial markets that determines how stocks and other securities are valued. It's a framework that helps 
+                            investors and analysts determine the fair value of an asset based on various factors, such as risk, time horizon, and market conditions. 
+                            One crucial element in asset pricing models is trading costs. These costs represent the friction in the buying and selling process, affecting 
+                            how much investors actually earn from their investments. This project explores how trading costs, particularly changes in tick size, impact stock prices.</p>
+                        
+                        <h3>What Are Trading Costs?</h3>
+                        <p>Trading costs are the expenses involved in buying or selling stocks. They can take different forms, but some common types include:</p>
+                        <ul>
+                           <li><strong>Bid-ask spread:</strong> The difference between the price a buyer is willing to pay (bid) and the price a seller is asking for (ask).</li>
+                           <li><strong>Transaction fees:</strong> Charges from brokers or exchanges for executing trades.</li>
+                           <li><strong>Slippage:</strong> The difference between the expected price of a trade and the actual price, especially in volatile markets.</li>
+                        </ul>
+                        <p>One of the most significant trading costs is the bid-ask spread, which is influenced directly by tick size. Tick size is the minimum price movement of a stock, and it plays a vital role in shaping the cost of trading.</p>
+                        
+                        <h3>Why Do Trading Costs Matter?</h3>
+                        <p>Trading costs are critical because they directly affect investors' returns. When trading costs are high, they eat into the profits that an investor makes from buying and selling assets. Over time, this can significantly reduce an investor's portfolio performance. In addition, trading costs influence market liquidity, which is the ease with which assets can be bought or sold without affecting their price. High trading costs often lead to lower liquidity, which can slow down trading and reduce market efficiency.</p>
+                        
+                        <h3>The Research: Causal Analysis of Trading Costs</h3>
+                        <p>The research uses a unique approach to analyze the impact of trading costs on stock prices. By leveraging data from European markets, 
+                            specifically the tick-size changes enforced by MiFID II regulations, we were able to perform a <em>randomized control trial</em> (RCT) type of analysis. 
+                            This method allowed us to isolate the effect of tick-size changes on stock prices, suggesting a causal link between trading costs and asset prices.</p>
+                        <p>MiFID II is a regulatory framework that introduced standardized tick sizes across European markets. These tick sizes are adjusted regularly based on stock price levels, making them an excellent tool for studying the impact of changes in trading costs.</p>
+                        
+                        <h3>How Do Changes in Tick Sizes Affect Prices?</h3>
+                        <p>We found that changes in tick size have a significant impact on stock prices. When tick sizes are increased, trading becomes more expensive, leading to a decrease in stock prices. The paper estimates that increasing the tick size can reduce stock prices by 0.9% to 1.3%. On the other hand, reducing tick sizes makes trading cheaper, which leads to a rise in stock prices—by as much as 3.3% to 3.5%.</p>
+                        <p>Interestingly, this effect is asymmetric. Reducing tick sizes has a much stronger positive effect on stock prices than the negative effect of increasing tick sizes. This suggests that lowering trading costs can lead to substantial price increases, particularly in markets with smaller, less liquid stocks.</p>
+                        
+
+                        <h3>Small Firms vs. Large Firms: Different Reactions</h3>
+                        <p>One of the key findings of the study is that the impact of tick-size changes is not uniform across all stocks. Smaller firms, 
+                            especially those with less liquidity, are more sensitive to changes in trading costs. When tick sizes are reduced, smaller firms tend 
+                            to experience a larger increase in stock prices. This may be mechanical, as smaller firms usually have wider bid-ask spreads, meaning the reduction in tick size leads to more significant cost savings for traders.</p>
+                        <p>In contrast, larger firms, which tend to have more liquidity and tighter spreads, show a more moderate reaction to changes in tick sizes. For these firms, the price effects are still present but less pronounced than in smaller firms. This indicates that trading costs play a more crucial role in the pricing of less liquid, smaller stocks.</p>
+
+                        <h3>Key Findings from the Study</h3>
+                        <p>The research highlights several important takeaways:</p>
+                        <ul>
+                        <li><strong>Price reduction with increased tick sizes:</strong> A larger tick size results in lower stock prices, with a decline between 0.9% to 1.3%.</li>
+                        <li><strong>Price increase with reduced tick sizes:</strong> When tick sizes are reduced, stock prices increase significantly, between 3.3% and 3.5%, especially in smaller, less liquid stocks.</li>
+                        <li><strong>Asymmetric effect:</strong> Lowering tick sizes has a stronger impact on raising stock prices than increasing tick sizes has on reducing them.</li>
+                        <li><strong>More impact on small firms:</strong> The effect of tick-size changes is much stronger in small, less liquid firms compared to large, liquid firms.</li>
+                        </ul>
+                        <p>These findings underline how sensitive stock prices can be to changes in trading costs, particularly for smaller companies that typically have higher trading costs to begin with.</p>
+
+                        <h3>Behavioral Effects: Strategic Trading and Price Clustering</h3>
+                        <p>Aside from the direct effects on stock prices, the study also observed some interesting behavioral effects linked to tick-size changes. For example, the researchers documented excess returns&mdash;significantly higher than normal returns&mdash;on the days before tick-size changes took effect. This suggests that some traders might engage in strategic trading, taking advantage of the predictable changes in trading costs.</p>
+                        <p>One explanation for this is that the presence of price clustering, where prices tend to group around certain "psychologically significant" numbers, 
+                            like round numbers. The measure effect persists when we control for the presence of these round numbers.</p>
+
+
+                        <!-- <p>Alternatively, we suggest that strategic behavior may also explain the observed excess returns. This hypothesis suggests that some market participants 
+                            deliberately manipulate trading patterns before tick-size changes to benefit from the expected price effects. 
+                            Traders may anticipate how a change in tick size will affect liquidity and spreads, and position themselves to 
+                            capitalize on these shifts. For example, a trader could buy shares before a reduction in tick size, expecting prices to 
+                            increase as trading costs drop. Similarly, a trader might sell shares ahead of a tick-size increase to avoid losses from 
+                            reduced liquidity and wider spreads. This strategic behavior can cause distortions in prices, as traders exploit the upcoming 
+                            changes for short-term gains.</p> -->
+                        <!-- <p>The presence of these strategies adds another layer of complexity to how tick-size changes 
+                            influence stock prices, not only through direct market mechanics but also through the anticipatory actions of informed traders.</p> -->
+                        <p>Alternatively, we suggest that strategic behavior may also explain the observed excess returns. 
+                            This hypothesis proposes that certain market participants, particularly market makers, engage in trading strategies 
+                            aimed at inducing a tick-size change to benefit from wider spreads. 
+                            Market makers earn the spread and are therefore incentivized to push a stock's price above a tick-size threshold just before the market closes. 
+                            This move forces an increase in the tick size, ensuring wider spreads for the following trading day, which in turn increases the market makers' profits.</p>
+                        <p>On the flip side, institutional investors trading large volumes of stock may attempt to drive the price below a threshold to trigger a tick-size reduction. By doing so, they reduce trading costs through narrower spreads, benefiting from lower transaction costs the next day.</p>
+                        <p>While the evidence in our study is not substaintial, this behavior aligns with earlier research on market manipulation, which shows how 
+                            uninformed manipulators can profit simply by buying and selling shares. Still, we offer this latter explaination very cautiously and show that the results
+                            persist when we control for the strategic incentives.</p>
+                        <!-- <p>As other market participants interpret this behavior as informed trading, they may inadvertently contribute to price movements. 
+                            Empirical evidence also suggests that informed participants, such as corporate insiders, brokers, and market makers, are often the most 
+                            likely to engage in price manipulation to exploit these shifts. This strategic trading adds a layer of complexity to how tick-size changes 
+                            impact stock prices, as it highlights the potential for manipulation by market insiders seeking short-term profit gains.</p> -->
+                            
+                        <h3>Conclusion: Trading Costs and Market Efficiency</h3>
+                        <p>In conclusion, this research on empirical causal asset pricing shows the significant role trading costs, such as tick sizes, play in shaping stock prices. Changes in tick size can lead to measurable shifts in market behavior, particularly in less liquid, smaller firms. The asymmetric nature of price responses to tick-size increases and decreases highlights the sensitivity of markets to trading costs, underscoring the need for investors to stay aware of these changes.</p>
+                        <p>For policymakers, setting an optimal tick size is critical to maintaining market efficiency. By carefully balancing trading costs and liquidity, regulations like MiFID II can help foster a more transparent, fair, and efficient market for all participants.</p>
+                        
+                        <h3>Final Note</h3>
+                        <p>Please note that this paper is still a work in progress and more research is needed to fully understand the implications of trading costs on asset pricing.</p>
+                        <p>For more technical details, please refer to the <a href="assets/papers/ticksize.pdf" target="_blank">full research paper</a>.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="social-icons">
+                <a class="icon-tooltip">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="tooltip">Zug, Switzerland</div>
+                </a>
+                <a href="https://linkedin.com/in/lgaegauf"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/lpupp"><i class="fab fa-github"></i></a>
+                <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3545351"><i class="fas fa-book"></i></a>
+                <a href="mailto:luca.gaegauf@unige.ch"><i class="far fa-envelope"></i></a>
+            </div>
+            <p class="footer-text">Handcrafted by me and ChatGPT</p>
+            <p class="footer-made-with">Made with ❤️</p>
+        </footer>
+    </div>
+</body>
+</html>
